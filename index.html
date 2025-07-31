@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <h1 style="margin: 0;">Weather Dashboard</h1>
+            <button id="themeToggle" title="Toggle theme" style="background: none; border: none; cursor: pointer; font-size: 1.8em; margin-left: 10px;">
+                <span id="themeIcon" aria-label="theme">🌙</span>
+            </button>
+        </div>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="recentSearches" class="recent-searches" style="margin-bottom: 12px;"></div>
+        <div id="weatherResult" class="weather-result">
+            <!-- Weather details will appear here -->
+        </div>
+        <div id="forecast" class="forecast-result">
+            <!-- 5-day forecast will appear here -->
+        </div>
+        <div id="sunDetails" class="sun-details" style="margin-top:18px; text-align:center;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
